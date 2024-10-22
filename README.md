@@ -13,23 +13,19 @@ SQLite (already included in Node.js with sqlite3).
 Steps
 Clone the repository:
 
-bash
-Copy code
+code:-
 git clone https://github.com/your-username/personal-expense-tracker.git
 Navigate into the project directory:
 
-bash
-Copy code
+code:-
 cd personal-expense-tracker
 Install dependencies:
 
-bash
-Copy code
+ code
 npm install
 Run the server:
 
-bash
-Copy code
+ code
 node app.js
 The API will now be running on http://localhost:3000.
 
@@ -40,7 +36,7 @@ POST /transactions
 Description: Adds a new income or expense transaction.
 Request Body:
 json
-Copy code
+ code
 {
   "type": "income/expense",
   "category": "category_name",
@@ -50,7 +46,7 @@ Copy code
 }
 Response:
 json
-Copy code
+ code
 {
   "id": 1
 }
@@ -60,7 +56,7 @@ GET /transactions
 Description: Retrieves all transactions.
 Response:
 json
-Copy code
+ code
 [
   {
     "id": 1,
@@ -78,7 +74,7 @@ GET /transactions/
 Description: Retrieves a transaction by its ID.
 Response:
 json
-Copy code
+ code
 {
   "id": 1,
   "type": "income",
@@ -93,7 +89,7 @@ PUT /transactions/
 Description: Updates a transaction by its ID.
 Request Body:
 json
-Copy code
+ code
 {
   "type": "income/expense",
   "category": "new_category",
@@ -103,7 +99,7 @@ Copy code
 }
 Response:
 json
-Copy code
+ code
 {
   "updatedID": 1
 }
@@ -113,7 +109,7 @@ DELETE /transactions/
 Description: Deletes a transaction by its ID.
 Response:
 json
-Copy code
+ code
 {
   "message": "Transaction deleted successfully."
 }
@@ -123,7 +119,7 @@ GET /summary
 Description: Retrieves a summary of total income, total expenses, and balance.
 Response:
 json
-Copy code
+ code
 {
   "totalIncome": 5000,
   "totalExpenses": 2000,
